@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require './lib/hermit_savior'
+
+HermitSavior::CLI.new.call

@@ -1,6 +1,2 @@
-require "hermit_savior/version"
-
-module HermitSavior
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "hermit_savior/version"
+require_relative './hermit_savior/cli'
