@@ -8,15 +8,15 @@ class HermitSavior::CLI
     goodbye
   end
   
-   def quarantined
+  def quarantined
     puts <<-DOC.gsub /^\s*/, ''
     
-    1.Videogames
-    2. Books
-    3. Money
-    4. Games
-    5. Recipies
+      1. Videogames
+      2. Books
+      3. Games
+      4. Recipies
     DOC
+    #@savior = HermitSavior::Savior.solution
   end
   
   def gives_option
