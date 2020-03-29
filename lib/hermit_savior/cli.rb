@@ -2,13 +2,16 @@ class HermitSavior::CLI
   
   def call 
     puts "Hey there hermit!!"
+    puts "Crabby being confined to your shell, heres some solutions for your shell fever."
     quarantined
     gives_option
+    goodbye
   end
   
    def quarantined
     puts <<-DOC.gsub /^\s*/, ''
-    1. Video
+    
+    1.Videogames
     2. Books
     3. Money
     4. Games
@@ -16,27 +19,22 @@ class HermitSavior::CLI
     DOC
   end
   
-   def free_to_crawl
-    puts <<-DOC.gsub /^\s*/, ''
-    1. New Movies
-    2. Biking
-    3. Resturants
-    4. Art & Design
-    5. Events
-    DOC
-  end
- 
   def gives_option
-    puts "Quarantined? or Free to crawl? or type 'exit' to be a crabapple:"
-   input = nil 
+    puts "Pick a category by number to get started"
+    input = nil 
+      puts "Type list to go back or 'exit' to be a crabapple:"
     while input != "exit"
       input = gets.strip.downcase
     case input
-    when "quarantined" 
+    when "1" 
       puts "More info on option 1"
-    when "free_to_crawl"
+    when "2"
       puts "More info on option 2"
-      end  
+    when "list" 
+      quarantined
+    else
+      puts "AWW sorry claws too big? Type 'list' or 'exit'"
+      end 
     end
   end  
  

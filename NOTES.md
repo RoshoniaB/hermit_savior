@@ -30,3 +30,35 @@ Ideas for CLI Project
   
   invalid imput "AWW sorry claws too big? 
   try again"
+
+  # def free_to_crawl
+  #  puts <<-DOC.gsub /^\s*/, ''
+   # 1. New Movies
+    #2. Biking
+    #3. Resturants
+    #4. Art & Design
+    #5. Events
+    #DOC
+  #end
+  
+    1. Video
+      name of popular shows 
+      url 
+      synopsis
+    2. Books
+      name of popular books 
+      url 
+      synopsis
+    3. Money
+      Cryptocurrency
+      stocks
+    4. videoames
+      name of popular games 
+      url 
+      synopsis
+    5. Recipies
+  
+  
+ 
+ 
+ 
