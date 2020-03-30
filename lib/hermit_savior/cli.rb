@@ -4,42 +4,44 @@ class CLI
     Scraper.scrape_blog
     puts "Hey there hermit!!"
     puts "Crabby being confined to your shell, heres some solutions for your shell fever."
-    quarantined
+    list_todos
     gives_option
     goodbye
   end
   
-  def quarantined
-    puts <<-DOC.gsub /^\s*/, ''
+  def list_todos
+    Savior.all.each.with_index(1) do | savior, i |
+    puts "#{i}. #{savior.todo}"
+    end
+  end 
+   
+  def gives_option
     
-      1. Videogames
-      2. Books
-      3. Games
-      4. Recipies
-    DOC
+    input = gets.chomp 
+    if !input.to_i.between?(1, Savior.all.count)
+      "AWW sorry claws too big? Type 'list' or 'exit'" 
+      list_todos
+      gives_option
+    else
+      savior = Savior.all[imput.to_i-1]
+      display_description(savior)
+     
+    end   
+    puts "Type 'list' to go back or 'exit' to be a crabapple:" 
+    go_back = gets.strip.downcase
+    if go_back == "list" 
+      list_todo
+      gives_option
+      
+    elseif go_back ==  "exit"
+      puts "Snap snap crabapple!!"
+      exit
+    else  
+    "AWW sorry claws too big? Type 'list' or 'exit'" 
+    end   
   end
   
-  def gives_option
-    puts "Pick a category by number to get started"
-    input = nil 
-      puts "Type list to go back or 'exit' to be a crabapple:"
-    while input != "exit"
-      input = gets.strip.downcase
-    case input
-    when "1" 
-      puts "More info on option 1"
-    when "2"
-      puts "More info on option 2"
-    when "list" 
-      quarantined
-    else
-      puts "AWW sorry claws too big? Type 'list' or 'exit'"
-      end 
-    end
-  end  
+  
  
-  def goodbye
-    puts "Snap snap crabapple!!"
-  end
   
 end  
