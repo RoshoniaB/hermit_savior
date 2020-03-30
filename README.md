@@ -1,45 +1,67 @@
-hello world 
+Plan your gem, imagine your interface 
 
-# HermitSavior
+Start with the project structure - google  
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/hermit_savior`. To experiment with that code, run `bin/console` for an interactive prompt.
+Start with the entry point - the file run 
 
-TODO: Delete this and the text above, and describe your gem
+Force that to build the CLI interface
 
-## Installation
+Stub out the interface  
 
-Add this line to your application's Gemfile:
+Start making things real 
 
-```ruby
-gem 'hermit_savior'
-```
+Discover objects
 
-And then execute:
+program 
 
-    $ bundle
+Ideas for CLI Project
+  How to stay busy on a slow saturday
+  Greeted "Hey there hermit!! Quarantined in your shell? 
+  Quarantined? or free to crawl?
+  Quarantined: crabby being confined to your shell well dont be a crabapple heres some solutions to solve your shell fever.
+  free to crawl: finally came out of your shell huh yee-claw!!! heres a list of things to do at sea.
+  Shows a list of 
+   categories ie. pick a category to get more options 
+    Books(Comics), money(Cryptocurrency & finance),Games(video games),Video (anime), 
+    Open Movie Database, resturants, Art & Design, Events, biking
+ 
+  choose a number to learn more about?
+  or choose 'X'to be a crabapple
+  
+  invalid imput "AWW sorry claws too big? 
+  try again"
 
-Or install it yourself as:
-
-    $ gem install hermit_savior
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/'merry-collection-3408'/hermit_savior. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the HermitSavior project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/'merry-collection-3408'/hermit_savior/blob/master/CODE_OF_CONDUCT.md).
+  # def free_to_crawl
+  #  puts <<-DOC.gsub /^\s*/, ''
+   # 1. New Movies
+    #2. Biking
+    #3. Resturants
+    #4. Art & Design
+    #5. Events
+    #DOC
+  #end
+  
+    1. Video
+      name of popular shows 
+      url 
+      synopsis
+    2. Books
+      name of popular books 
+      url 
+      synopsis
+    3. Money
+      Cryptocurrency
+      stocks
+    4. videoames
+      name of popular games 
+      url 
+      synopsis
+    5. Recipie
+    
+    
+    url------https://www.techradar.com/news/things-to-do  ----
+    
+    
+    
+    
+    
