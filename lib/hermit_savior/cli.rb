@@ -10,17 +10,24 @@ class HermitSavior::CLI
   
   def quarantined
     puts <<-DOC.gsub /^\s*/, ''
-    
-      1. Videogames
-      2. Books
-      3. Games
-      4. Recipies
+    1. Watch the iHeart Living Room Concert
+    2. Apple Arcade's latest is built for the whole family
+    3. 'Tiger King' rules Netflix this weekend
+    4. Trivia is back in session, right on your phone
+    5. Make a movie with free Final Cut Pro X
+    6. Take a trip to a virtual museum or national park
+    7. Become a master chef with a meal kits service
+    8. Play either Doom Eternal or Animal Crossing
+    9. Watch movie series in order
+    10. Read one of 100 top ebooks
+    11. Discover a new podcast
+    12. Clean your gadgets – physically and digitally
     DOC
-    #@savior = HermitSavior::Savior.solution
+    
   end
   
   def gives_option
-    puts "Pick a category by number to get started"
+    puts "Pick number to get started"
     input = nil 
       puts "Type list to go back or 'exit' to be a crabapple:"
     while input != "exit"
