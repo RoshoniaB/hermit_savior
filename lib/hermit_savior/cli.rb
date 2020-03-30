@@ -1,6 +1,7 @@
-class HermitSavior::CLI
+class CLI
   
   def call 
+    Scraper.scrape_blog
     puts "Hey there hermit!!"
     puts "Crabby being confined to your shell, heres some solutions for your shell fever."
     quarantined
@@ -16,7 +17,6 @@ class HermitSavior::CLI
       3. Games
       4. Recipies
     DOC
-    #@savior = HermitSavior::Savior.solution
   end
   
   def gives_option

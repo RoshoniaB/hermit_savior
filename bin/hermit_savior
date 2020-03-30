@@ -1,5 +1,11 @@
 #!/usr/bin/env ruby
 
-require './lib/hermit_savior'
+require 'pry'
+require 'open-uri'
+require 'nokogiri'
 
-HermitSavior::CLI.new.call
+require_relative '../lib/hermit_savior/cli'
+require_relative '../lib/hermit_savior/savior'
+require_relative '../lib/hermit_savior/scraper'
+
+CLI.new.call
