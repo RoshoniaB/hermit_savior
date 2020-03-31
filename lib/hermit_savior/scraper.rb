@@ -7,12 +7,14 @@ class Scraper
     html = open(BLOG_URL)
     
     doc = Nokogiri::HTML(html)
-      
     
-    doc.css('ol').css('li').each do |savior|
-    binding.pry
-    todo =
-    url = 
-    Savior
+    doc.css('ol').css('li').each do |lazy|
+     
+      todo = lazy.css('strong').text
+      description = lazy.text
+      Lazy.new(todo, url)
+    end
+  
+  
   end
 end
