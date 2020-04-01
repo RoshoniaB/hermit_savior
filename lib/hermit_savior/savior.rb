@@ -1,18 +1,19 @@
 class Savior
 
-attr_accessor :todo, :url 
+  attr_accessor :todo, :description 
 
-@@all = []
+  @@all = []
 
-def initialize(todo, url)
-  @todo = todo
-  @url = url
-  @@all << self 
-end
+  
+  def initialize(todo, description)
+    @todo = todo
+    @description = description
+    @@all << self 
+  end 
 
-def self.all
-  @@all
-end
+  def self.all
+    @@all
+  end
 
 
 end  
