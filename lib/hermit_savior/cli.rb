@@ -1,9 +1,10 @@
 class CLI
   
   def call 
-    Scraper.scrape_blog
+   
     puts "Hey there hermit!!"
     puts "Crabby being confined to your shell, heres some solutions for your shell fever."
+    Scraper.scrape_blog
     list_todos
     gives_option
   
@@ -15,7 +16,7 @@ class CLI
     end
   end 
   
-  puts "Choose a number to get started."
+    puts "Choose a number to get started."
   def gives_option
     input = gets.chomp 
     if !input.to_i.between?(1, Savior.all.count)
@@ -27,7 +28,7 @@ class CLI
       display_description(savior)
      
     end   
-    puts "Type 'list' to go back or 'exit' to be a crabapple:" 
+      puts "Type 'list' to go back or 'exit' to be a crabapple:" 
     go_back = gets.strip.downcase
     if go_back == "list" 
     
@@ -47,9 +48,5 @@ class CLI
     Scraper.scrape_decriptions(savior)  
     puts "Here's how-to #{savior.todo}:"
   end
-  
- 
-  
-  
   
 end  
