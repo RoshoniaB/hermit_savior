@@ -19,3 +19,4 @@ Start making things real
 Discover objects
 program 
 
+gem install openssl
